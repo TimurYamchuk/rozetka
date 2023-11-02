@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список товаров</title>
+    <style> 
+/* Добавляем стили при наведении */
+.product:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 200px;
+    text-decoration: none; 
+    transition: all 0.2s ease; 
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+.product span {
+    font-weight: bold;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <a href="product1.html" class="product">
+            <img src="product1.jpg" alt="Товар 1">
+            <h2>Iphone 15</h2>
+            <span>$1300</span>
+        </a>
+        <a href="product2.html" class="product">
+            <img src="product2.jpg" alt="Товар 2">
+            <h2>Iphone 14</h2>
+            <span>$1100</span>
+        </a>
+        <a href="product3.html" class="product">
+            <img src="product3.jpg" alt="Товар 3">
+            <h2>Iphone 13</h2>
+            <span>$900</span>
+        </a>
+        <a href="product4.html" class="product">
+            <img src="product4.jpg" alt="Товар 4">
+            <h2>Iphone 12</h2>
+            <span>$850</span>
+        </a>
+        <a href="product5.html" class="product">
+            <img src="product5.jpg" alt="Товар 5">
+            <h2>Iphone 11</h2>
+            <span>$650</span>
+        </a>
+    </div>
+</body>
+</html>

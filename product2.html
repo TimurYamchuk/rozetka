@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Товар 2</title>
+   <style>
+      /* Основные стили страницы товара */
+      body {
+         margin: 0;
+         background-color: #f0f0f0;
+         font-family: Arial, sans-serif;
+      }
+
+      .product-container {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         min-height: 100vh;
+      }
+
+      .product {
+         display: flex;
+         flex-direction: row;
+         background-color: #fff;
+         border-radius: 10px;
+         max-width: 800px;
+         width: 100%;
+      }
+
+      .product-image {
+         flex: 1;
+         padding: 20px;
+      }
+
+      .product-image img {
+         max-width: 100%;
+         height: auto;
+         border-radius: 5px;
+      }
+
+      .product-details {
+         flex: 1;
+         padding: 20px;
+      }
+
+      .product h2 {
+         font-size: 1.5em;
+         margin: 10px 0;
+      }
+
+      .product p {
+         margin: 10px 0;
+      }
+
+      .product span {
+         font-weight: bold;
+      }
+
+      .product-button {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .product button {
+         padding: 10px 20px;
+         background-color: #4CAF50;
+         color: white;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+         transition: background-color 0.3s;
+      }
+
+      .product button:hover {
+         background-color: #45a049;
+      }
+
+      /* Стили для блока с похожими товарами */
+      .related-products {
+         max-width: 800px;
+         width: 100%;
+         margin-top: 20px;
+      }
+
+      .related-products h3 {
+         font-size: 1.2em;
+         margin: 10px 0;
+      }
+
+      .product-list {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 20px;
+      }
+
+      .product-list-item {
+         flex: 1;
+         max-width: calc(33.33% - 20px); 
+         padding: 10px;
+         background-color: #fff;
+         border-radius: 5px;
+         text-align: center;
+         text-decoration: none;
+         transition: all 0.2s ease;
+      }
+
+      .product-list-item:hover {
+         transform: scale(1.05);
+      }
+
+      .product-list-item img {
+         max-width: 100%;
+         height: auto;
+         border-radius: 5px;
+      }
+
+      .product-list-item h4 {
+         font-size: 1.2em;
+         margin: 10px 0;
+      }
+
+      .product-list-item p {
+         margin: 10px 0;
+      }
+
+      .product-list-item span {
+         font-weight: bold;
+      }
+   </style>
+</head>
+<body>
+   <div class="product-container">
+      <div class="product">
+         <div class="product-image">
+            <img src="product2.jpg" alt="Товар 2">
+         </div>
+         <div class="product-details">
+            <h2>Iphone 14</h2>
+            <p>Семестр в Шаге</p>
+            <span>$1100</span>
+            <div class="product-button">
+               <button onclick="buyProduct('Iphone 14', 1100)">Купить</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="related-products">
+         <h3>Похожие товары:</h3>
+         <div class="product-list">
+            <a href="product1.html" class="product-list-item">
+                <img src="product1.jpg" alt="Товар 1">
+                <h4>Iphone 15</h4>
+                <span>$1300</span>
+            </a>
+            <a href="product3.html" class="product-list-item">
+                <img src="product3.jpg" alt="Товар 3">
+                <h4>Iphone 13</h4>
+                <span>$900</span>
+            </a>
+            <a href="product4.html" class="product-list-item">
+                <img src="product4.jpg" alt="Товар 4">
+                <h4>Iphone 12</h4>
+                <span>$850</span>
+            </a>
+            <a href="product5.html" class="product-list-item">
+                <img src="product5.jpg" alt="Товар 5">
+                <h4>Iphone 11</h4>
+                <span>$650</span>
+            </a>
+         </div>
+      </div>
+   </div>
+
+   <script>
+      function buyProduct(productName, price) {
+         alert(`Вы купили ${productName} за ${price}$!`);
+      }
+   </script>
+</body>
+</html>
